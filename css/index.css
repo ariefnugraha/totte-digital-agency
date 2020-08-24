@@ -1,0 +1,497 @@
+:root {
+    --putih: #ffffff;
+    --hitam: #000000;
+    --biru: #26848d;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 2% 5%;
+    position: fixed;
+    width: 100%;
+    text-transform: capitalize;
+    z-index: 100;
+}
+
+.navbar a {
+    color: var(--putih);
+    text-decoration:none;
+}
+
+.navbar .brand, .navbar .bar {
+    width: 5%;
+}
+
+.navbar .menu {
+    width: 90%;
+}
+
+.navbar .bar {
+    display: none;
+}
+
+.navbar .brand .navbar-brand {
+    font-size: 25px;
+}
+
+.navbar .menu .navbar-menu {
+    list-style-type: none;
+}
+
+.navbar .menu .navbar-menu .navbar-menu-item {
+    display: inline;
+    margin: 0 2%;
+}
+
+.container #welcome {
+    background: url("../asset/background.jpg") no-repeat;
+    height: 720px;
+    background-size: cover;
+    background-attachment: fixed;
+  background-position: center;
+}
+
+.container #welcome .wrapper {
+    color: var(--putih);
+    padding: 10% 10% 10% 10%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 477px;
+}
+
+.container #welcome .wrapper .title {
+    font-size: 40px;
+    width: 70%;
+    text-transform: capitalize;   
+    margin: 0; 
+}
+
+.container #welcome .wrapper p {
+    width: 50%;
+    line-height: 180%;
+    text-transform: capitalize;
+}
+
+.container #welcome .wrapper .see-service {
+    background-color: var(--biru);
+    color: var(--putih);
+    padding: 2% 5%;
+    display: inline-block;
+    margin-top: 1%;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.wave {
+    position: relative;
+    top: -250px;
+}
+
+.wave svg {
+    display: block;
+}
+
+.container #about {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -20%;
+    padding: 5% 10%;
+}
+
+.container #about .about-content, .container #about .about-image {
+    width: 45%;
+}
+
+.container #about .about-content .title, .container #services .title, .container #clients .title, .container #reviews .title, .container #contacts .title {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: var(--biru);
+}
+
+.container #about .about-content .about-description {
+    line-height: 180%;
+    text-transform: capitalize;
+}
+
+.container #about .about-image {
+    padding: 0 5%;
+}
+
+.container #about .about-image img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    height: 350px;
+}
+
+.container #services {
+    padding: 0 10%;
+}
+
+.container #services .title, .container #clients .title, .container #reviews .title, .container #contacts .title {
+    text-align: center;
+}
+
+.container #services .services-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container #services .services-flex .services-item {
+    width: 20%;
+    margin: 3% 5%;
+}
+
+.container #services .services-flex .services-item .services-image {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container #services .services-flex .services-item .services-title  {
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--biru);
+    height: 80px;
+}
+
+.container #services .services-flex .services-item .services-description {
+    line-height: 180%;
+    margin-top: 25%;
+} 
+
+.container #clients {
+    padding: 0 10%;
+}
+
+.container #clients .clients-flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #clients .clients-flex .clients-item {
+    display: inline-block;
+    padding: 4% 2%;
+}
+
+.container #clients .clients-flex .clients-item img {
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container #reviews {
+    padding: 0 5%;
+}
+
+.container #reviews .reviews-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 4%;
+}
+
+.container #reviews .reviews-flex .reviews-item {
+    display: flex;
+    flex-flow: row nowrap;
+    border: solid 1px #e8e8e8;
+    width: 35%;
+    margin: 2% 2%;
+    padding: 3% 5%;
+}
+
+.container #reviews .reviews-flex .reviews-item .reviews-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.container #reviews .reviews-flex .reviews-item .reviews-content {
+    margin: 0 10%;
+}
+
+.container #reviews .reviews-flex .reviews-item .reviews-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.container #reviews .reviews-flex .reviews-item .reviews-content .reviews-name {
+    color: var(--biru);
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.container #reviews .reviews-flex .reviews-item .reviews-content .reviews-job {
+    font-size: 14px;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.container #reviews .reviews-flex .reviews-item .reviews-content .reviews-description {
+    line-height: 180%;
+}
+
+.container #contacts {
+    padding: 0 10%;
+}
+
+.container #contacts .subtitle {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: initial;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container #contacts form  {
+    width: 50%;
+    margin: 5% auto;
+    text-transform: capitalize;
+}
+
+.container #contacts form .form-group {
+    margin-bottom: 5%;
+}
+
+.container #contacts form .form-group .form-control {
+    display: block;
+    background-color: #EBEBE0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 4% 5%;
+    margin-top: 3%;
+    font-size: 16px;
+    width: 100%;
+}
+
+.container #contacts form .form-group .textarea {
+    resize: vertical;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container #contacts form .form-group .btn-submit {
+    width: 100%;
+    background-color: var(--biru);
+    color: var(--putih);
+    border-radius: 30px;
+    border: none;
+    padding: 3% 4%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--biru);
+    padding: 3% 10%;
+    color: var(--putih);
+    text-transform: capitalize;
+}
+
+footer .footer-flex {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+footer .footer-flex div {
+    width: 25%;
+    margin: 0 3%;
+}
+
+footer .footer-flex .socmed a {
+    display: block;
+    margin: 10% 0;
+    color: var(--putih);
+    text-decoration: none;
+    text-transform: none;
+}
+
+footer .copyright {
+    text-align: center;
+    color: var(--putih);
+    text-decoration: none;
+    display: block;
+    margin-top: 3%;
+}
+
+.scroll-to-top {
+    position: fixed;
+    background-color: var(--biru);
+    bottom: 10%;
+    right: 5%;
+    padding: 1% 1.5%;
+    cursor: pointer;
+    color: var(--putih);
+    border-radius: 50%;
+    display: none;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 80px;
+    }
+
+    .navbar .menu {
+        display: none;
+        position: absolute;
+        background-color: var(--biru);
+        top: 90px;
+        width: 100%;    
+    }
+
+    .navbar .menu .navbar-menu .navbar-menu-item {
+        display: block;
+        margin: 10% 0;
+    }
+
+    .navbar .bar {
+        display: block;
+        text-align: right;
+        width: 72%;
+    }
+
+    .navbar .bar button {
+        background: none;
+        border: none;
+    }
+
+    .navbar .bar button i {
+        color: var(--putih);
+    }
+
+    .container #welcome {
+        height: 647px;
+    }
+
+    .container #welcome .wrapper {
+        padding: 30% 10%;
+        height: 432px;
+    }
+
+    .container #welcome .wrapper .title {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .container #welcome .wrapper p {
+        width: 100%;
+    }
+
+    .container #welcome .wrapper .see-service {
+        padding: 8% 10%;
+        margin: 5% 0;
+    }
+
+    .container .wave {
+        top: -72px;
+    }
+
+    .container #about {
+        flex-flow: column-reverse wrap;
+        overflow-x: hidden;
+        padding: 20% 10%;
+    }
+
+    .container #about .about-content, .container #about .about-image{
+        width: 100%;
+    }
+
+    .container #about .about-image {
+        padding: 0;
+    }
+
+    .container #services .services-flex {
+        flex-flow: column wrap;
+    }
+
+    .container #services .services-flex .services-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    .container #services .services-flex .services-item .services-description {
+        margin-top: 5%;
+    }
+
+    .container #clients {
+        padding: 0;
+    }
+
+    .container #clients .clients-flex .clients-item {
+        width: 40%;
+        padding: 10% 5%;
+    }
+
+    .container #reviews {
+        overflow: hidden;
+    }
+    .container #reviews .reviews-flex {
+        flex-flow: column wrap;
+    }
+
+    .container #reviews .reviews-flex .reviews-item {
+        width: 86%;
+        flex-flow: column wrap;
+        margin: 6% 2%;
+    }
+
+    .container #reviews .reviews-flex .reviews-item .reviews-content .reviews-name {
+        margin: 8% 0;
+    }
+
+    .container #contacts {
+        margin: 0;
+        padding: 0 10%;
+    }
+
+    .container #contacts .subtitle {
+        text-align: left;
+        width: 100%;
+        font-size: 16px !important;
+    }
+
+    .container #contacts form {
+        margin: 19% auto;
+        width: 100%;
+    }
+
+    .container #contacts form .form-group .form-control {
+        height: 50px;
+    }
+
+    footer .footer-flex {
+        flex-flow: column wrap;
+    }
+
+    footer .footer-flex div {
+        width: 100%;
+    }
+
+    footer .copyright {
+        margin: 10% 0;
+    }
+}
