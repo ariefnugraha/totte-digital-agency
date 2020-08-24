@@ -347,8 +347,7 @@ footer .copyright {
     display: none;
 }
 
-@media only screen and (max-width: 576px) {
-
+@media only screen and (max-width: 992px) {
     .navbar {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -381,15 +380,6 @@ footer .copyright {
 
     .navbar .bar button i {
         color: var(--putih);
-    }
-
-    .container #welcome {
-        height: 647px;
-    }
-
-    .container #welcome .wrapper {
-        padding: 30% 10%;
-        height: 432px;
     }
 
     .container #welcome .wrapper .title {
@@ -485,13 +475,67 @@ footer .copyright {
 
     footer .footer-flex {
         flex-flow: column wrap;
-    }
+    }    
 
     footer .footer-flex div {
         width: 100%;
     }
 
     footer .copyright {
-        margin: 10% 0;
+        margin: 5% 0;
+    }
+
+    .scroll-to-top {
+        padding: 3%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .container #welcome .wrapper {
+        padding: 35% 10%;
+    }
+
+    .container .wave {
+        top: -71px;
+    }
+
+    .container #contacts form .form-group .textarea {
+        height: 150px !important;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+    .container #welcome .wrapper {    
+        padding: 25% 10% 17% 10%;
+    }
+
+    .container #welcome .wrapper .see-service {
+        padding: 5% 10%;
+    }
+
+    .container .wave {
+        top: -117px;
+    }
+
+    .container #contacts form .form-group .textarea {
+        height: 150px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container #welcome .wrapper {    
+        padding: 25% 10% 7% 10%;
+    }
+
+    .container #welcome .wrapper .see-service {
+        padding: 5% 10%;
+    }
+
+    .container .wave {
+        top: -143px;
+    }   
+
+    footer .footer-flex .socmed a, footer .footer-flex .contact p {
+        margin: 5% 0;
     }
 }

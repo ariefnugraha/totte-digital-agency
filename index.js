@@ -1,23 +1,20 @@
 "use strict";
 
-let showMenu = false;
-const btnMenu = document.querySelector(".btn-bar");
-const menu =  document.querySelector(".menu");
-const navbar = document.querySelector(".navbar");
+let openMenu = false;
 
-function detectScreen() {
+const buttonMenu = document.querySelector(".btn-bar");
+const menu = document.querySelector(".menu");
 
-}
 
 function scrollToTop(scrollPosition) {
     const scrollTop = document.querySelector(".scroll-to-top");
-
     scrollPosition >= 65 ? scrollTop.style.display = "block" : scrollTop.style.display = "none";
 }
 
-function scroll(navbar) {
+function scroll() {
     let scrollPosition = document.documentElement.scrollTop;
-    console.log(scrollPosition);
+    const navbar = document.querySelector(".navbar");
+
     if (scrollPosition >= 65 || document.body.scrollTop >= 65) {
         navbar.style.backgroundColor = "#26848d";
         navbar.style.transition = "0.5s";
@@ -34,17 +31,14 @@ function toTop() {
     document.documentElement.scrollTop = 0
 }
 
-btnMenu.addEventListener("click", () => {
-    if(showMenu === false) {
-        showMenu = true;
+buttonMenu.addEventListener("click", () => {
+    const navbar = document.querySelector(".navbar");
+    if (openMenu === false) {
+        openMenu = true;
         menu.style.display = "block";
         navbar.style.backgroundColor = "#26848d";
     } else {
-        showMenu = false;
+        openMenu = false;
         menu.style.display = "none";
     }
 })
-
-//UNTUK SCREEN Smartphone;
-const screenWidth = screen.width;
-console.log("Ukuran screen : " + screenWidth)
