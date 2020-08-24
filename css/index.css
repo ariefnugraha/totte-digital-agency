@@ -382,6 +382,15 @@ footer .copyright {
         color: var(--putih);
     }
 
+    .container #welcome {
+        min-height: 700px;
+        max-height: 700px;
+    }
+
+    .container #welcome .wrapper {
+        min-height: 450px;
+        max-height: 450px;
+    }
     .container #welcome .wrapper .title {
         font-size: 25px;
         width: 100%;
