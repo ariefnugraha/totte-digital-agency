@@ -1,5 +1,3 @@
-"use strict";
-
 let openMenu = false;
 
 const buttonMenu = document.querySelector(".btn-bar");
