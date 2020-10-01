@@ -9,5 +9,6 @@
 <li>Javascript</li>
 </ul>
 <p>Open for projects and currently looking for job. Contact me via</p>
-<p>muhammadariefnugraha77@gmail.com</p>
+<a href="mailto:muhammadariefnugraha77@gmail.com">muhammadariefnugraha77@gmail.com</p>
 <a href="https://www.linkedin.com/in/arief-nugraha">Linkedin</a>
+<a href="https://www.dribbble.com/arief_nugraha">Dribble</a>
